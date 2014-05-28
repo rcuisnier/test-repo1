@@ -48,3 +48,6 @@ Branch 1 - Commit 1
 ###### BRANCH 1
 Voila la creation de la branch1
 
+La branch1 a ete mergee dans Master.
+
+Premier commit sur master apres le merge de branch1
