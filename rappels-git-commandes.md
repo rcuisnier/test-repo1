@@ -1,42 +1,56 @@
-Commandes Git utiles
+# Commandes Git utiles
 ==========
 
 # Travailler sur un projet Github existant 
-Créer son propre repo à partir d’un projet Github (Fork)
+## Créer son propre repo à partir d’un projet Github (Fork)
 To fork this project, click the "Fork" button in the GitHub.com repository
 Unwatch the main repository
 When you fork a particularly popular repository, you may find yourself with a lot of unwanted updates about it. To unsubscribe from updates to the main repository, click the "Unwatch" button on the main repository and select "Not Watching".
 Delete your fork
 At some point you may decide that you want to delete your fork. To delete a fork, just follow the same steps as you would to delete a regular repository.
 
-# Initialiser le repo 
-git clone https://github.com/user-me/repo.git
+### Initialiser le repo 
+	git clone https://github.com/user-me/repo.git
 
-Référencer le projet original (upstream)
-cd projectdir/
+### Référencer le projet original (upstream)
 > Changes the active directory in the prompt to the newly cloned "project" directory
-git remote add upstream https://github.com/user-original/project.git
+
+	cd projectdir/
+
 > Assigns the original repository to a remote called "upstream"
-git fetch upstream
+
+	git remote add upstream https://github.com/user-original/project.git
+
 > Pulls in changes not present in your local repository, without modifying your files
 
-Créer une branche de travail 
-Create your feature branch / switch branch (git checkout -b my-new-feature).
+	git fetch upstream
+
+### Créer une branche de travail 
+#### Create your feature branch (my-new-feature) and switch to the branch 
+	git checkout -b my-new-feature
+
 Test your changes to the best of your ability.
 Update the documentation to reflect your changes if they add or changes current functionality.
 Déployer sur le repo local
-Commit your changes (git commit -am 'Added some feature').
-Equivalent for : git add files + git commit
 
-Déployer sur le repo distant
-Push to the branch (git push origin my-new-feature).
-ou Push the master :
-git push origin master (# Pushes commits to your remote repository stored on GitHub)
-Importer les modifications du projet original
-git fetch upstream
-# Fetches any new changes from the original repository
-git merge upstream/master
-# Merges any changes fetched into your working files
+#### Commit your changes 
+> Equivalent for : git add files + git commit
+
+	git commit -am 'Added some feature'
+
+#### Déployer sur le repo distant
+##### Push to the branch 
+	git push origin my-new-feature).
+##### ou Push the master :
+	git push origin master 
+(# Pushes commits to your remote repository stored on GitHub)
+
+##### Importer les modifications du projet original // Fetches any new changes from the original repository
+	git fetch upstream
+
+##### Merges any changes fetched into your working files
+
+	git merge upstream/master
 
 Remarque : Pull VS Merge
 Pull
@@ -54,20 +68,20 @@ When you git fetch, git retrieves any commits from the target remote that you do
 
 
 
-Remarque branches
+### Remarque branches
 
-Create branches
+#### Create branches
 Branching allows you to build new features or test out ideas without putting your main project at risk. In git, branch is a sort of bookmark that references the last commit made in the branch. This makes branches very small and easy to work with.
 How do I use branches?
 Branches are pretty easy to work with and will save you a lot of headaches, especially when working with multiple people. To create a branch and begin working in it, run these commands:
 git branch mybranch
-# Creates a new branch called "mybranch"
+##### Creates a new branch called "mybranch"
 git checkout mybranch
-# Makes "mybranch" the active branch
+##### Makes "mybranch" the active branch
 
 Alternatively, you can use the shortcut:
 git checkout -b mybranch
-# Creates a new branch called "mybranch" and makes it the active branch
+#### Creates a new branch called "mybranch" and makes it the active branch
 
 To switch between branches, use git checkout.
 git checkout master
