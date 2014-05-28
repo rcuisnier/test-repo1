@@ -20,4 +20,8 @@ function b1() {
 function c1() {
 	return 0;
 }
+
+function d1() {
+	return 0;
+}
 ### REPO1 v1
