@@ -1,20 +1,18 @@
 # Objectif du fichier devoir le merger.
 
-<<<<<<< HEAD
-Repo 1 - OK
+Etape 1 - Repo 1 - OK
 
+Etape 2 - fonctions repo1 
 ### REPO1 v1
 function a1() {
-test
+	return 0;
 }
-
 
 
 function b1() {
-test
+	return 0;
 }
 ### REPO1 v1
 
-=======
-Repo 1 - OK
->>>>>>> 9986954ca1f70582fd94487ddec5e4a8bb883a19
+
+
