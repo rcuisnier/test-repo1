@@ -133,9 +133,9 @@ Shopping list:
  
  Todo list :
  
- - [] checklist
- - [x] checked
- - [] checklist2
+- [ ] checklist
+- [x] checked
+- [ ] checklist2
 
 # Quote
  
